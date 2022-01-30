@@ -24,7 +24,7 @@ public class DriverManager {
         return driver;
     }
 
-    public static AppiumDriver<?> initializeDriver() {
+    public static void initializeDriver() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("seleniumVersion", "3.141.59");
         capabilities.setCapability("browserstack.appium_version", "1.20.2");
@@ -96,7 +96,6 @@ public class DriverManager {
             default:
                 throw new RuntimeException("The platform and channel was not defined");
         }
-        return driver;
     }
 
     public static void setBuild(String build) {
