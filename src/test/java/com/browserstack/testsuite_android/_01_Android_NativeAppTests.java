@@ -1,22 +1,29 @@
 package com.browserstack.testsuite_android;
 
-import com.browserstack.base.DriverManager;
-import io.appium.java_client.AppiumDriver;
+import com.browserstack.test_base.TestBase;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class _01_Android_NativeAppTests extends DriverManager {
-    private final AppiumDriver<?> driver;
+public class _01_Android_NativeAppTests extends TestBase {
 
-    public _01_Android_NativeAppTests() throws Exception {
-        DriverManager driverManager = new DriverManager();
-        driverManager.setPlatform("Android_App");
-        driver = getDriver();
+    @BeforeClass
+    public static void beforeSuite() {
+        setPlatform("Android_App");
+        setRealMobile("true");
+        setProject("eBook.com Re-skin Project");
+        setBuild("Build 1.2.1");
     }
 
     @Test
-    public void iosAppTest() throws Exception {
-        Thread.sleep(6000);
-        System.out.println(driver.getContext());
+    public void androidNativeAppTest_1() throws Exception {
+        System.out.println(getDriver().getContext());
+        Thread.sleep(3000);
+    }
+
+    @Test
+    public void androidNativeAppTest_2() throws Exception {
+        System.out.println(getDriver().getContext());
+        Thread.sleep(3000);
     }
 
 }

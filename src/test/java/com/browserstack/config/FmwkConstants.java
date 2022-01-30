@@ -1,4 +1,4 @@
-package com.browserstack.base;
+package com.browserstack.config;
 
 public class FmwkConstants {
     public static final String USERNAME = "markraphael_28PLMH";
