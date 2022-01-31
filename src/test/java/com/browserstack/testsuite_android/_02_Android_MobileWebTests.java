@@ -9,9 +9,13 @@ public class _02_Android_MobileWebTests extends TestBase {
     @BeforeClass
     public static void beforeSuite() {
         setPlatform("Android_Web");
+        setBrowser("chrome");
+        setDevice("Samsung Galaxy S10e");
+        setOsVersion("9.0");
         setRealMobile("true");
         setProject("eBook.com Re-skin Project");
         setBuild("Build 1.2.1");
+        setBrowserstackDebug("true");
     }
 
     @Test

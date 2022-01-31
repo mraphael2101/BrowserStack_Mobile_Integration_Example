@@ -9,9 +9,13 @@ public class _01_Android_NativeAppTests extends TestBase {
     @BeforeClass
     public static void beforeSuite() {
         setPlatform("Android_App");
+        setAppOnCloud("bs://10435da92766886f5180e124be0fda5ff62033c9");
+        setDevice("Google Pixel 3");
+        setOsVersion("9");
         setRealMobile("true");
         setProject("eBook.com Re-skin Project");
         setBuild("Build 1.2.1");
+        setBrowserstackDebug("true");
     }
 
     @Test

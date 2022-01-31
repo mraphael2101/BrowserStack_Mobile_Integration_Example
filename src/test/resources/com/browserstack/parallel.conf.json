@@ -1,0 +1,19 @@
+{
+  "capabilities": {
+    "project": "eBook.com Android Re-skin Project",
+    "build": "eBook.com - build v1.0.1",
+    "name": "parallel_test",
+    "browserstack.debug": true,
+    "app": "bs://10435da92766886f5180e124be0fda5ff62033c9"
+  },
+
+  "environments": [{
+    "platform": "Android_App",
+    "device": "Google Pixel 3",
+    "os_version":  "9.0"
+  },{
+    "platform": "Android_App",
+    "device": "Samsung Galaxy S10e",
+    "os_version":  "9.0"
+  }]
+}

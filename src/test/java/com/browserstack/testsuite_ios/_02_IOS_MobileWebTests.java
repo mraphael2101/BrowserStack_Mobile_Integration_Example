@@ -8,9 +8,13 @@ public class _02_IOS_MobileWebTests extends TestBase {
     @BeforeClass
     public static void beforeSuite() {
         setPlatform("iOS_Web");
+        setBrowser("chromium");
+        setDevice("iPhone 11 Pro");
+        setOsVersion("13.2");
         setRealMobile("true");
         setProject("eBook.com Re-skin Project");
         setBuild("Build 1.2.1");
+        setBrowserstackDebug("true");
     }
 
     @Test
